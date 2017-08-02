@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      About
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <form (submit)="submit()" [formGroup]="formulario">
+    <ion-list>
+      <ion-item>
+        <ion-label stacked>Usuário</ion-label>
+        <ion-input type="text" formControlName="nome" placeholder="Nome Completo"></ion-input>
+      </ion-item>
+    </ion-list>
+    <button ion-button full type="submit">Login</button>
+  </form>
+<ion-content>
